@@ -1,0 +1,64 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Next.js
+.next/
+out/
+
+# Production / legacy outputs
+build/
+dist/
+
+# Testing
+coverage/
+.nyc_output/
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
+
+# Env (keep the example committed for onboarding)
+.env*
+!.env.example
+
+# Debug & package manager logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# ESLint
+.eslintcache
+
+# Turbopack / monorepo caches (harmless if unused)
+.turbo
+
+# Local documents (catalogs, briefs, etc.)
+*.pdf
+
+# OS
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editors & IDEs
+.idea/
+*.swp
+*.swo
+*~
+
+# Certificates & secrets (local)
+*.pem
+*.p12
+*.key

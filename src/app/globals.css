@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --color-zen-pink: #e598a8;
+  --color-zen-blue: #b4ccd9;
+  --color-zen-beige: #efdbd5;
+  --color-zen-brown: #8c5c51;
+  --color-zen-wine: #3f0c08;
+  --color-zen-gold: #c9a96e;
+
+  --font-sans: var(--font-montserrat), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-playfair), ui-serif, Georgia, serif;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-zen-beige text-zen-wine antialiased selection:bg-zen-pink selection:text-white;
+    cursor: none; /* We will implement a custom cursor */
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #efdbd5;
+}
+::-webkit-scrollbar-thumb {
+  background: #8c5c51;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f0c08;
+}
