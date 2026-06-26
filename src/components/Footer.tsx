@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Icon } from "@iconify/react";
+import Script from "next/script";
 
 const MAPS_QUERY =
   "https://www.google.com/maps/search/?api=1&query=Calle+8+8-31,+Roldanillo,+Valle+del+Cauca,+Colombia";
@@ -166,6 +167,38 @@ export function Footer() {
               >
                 <Icon icon="mdi:linkedin" className="h-6 w-6 hover:text-zen-beige transition-colors duration-300" />
               </a>
+            </div>
+
+            {/* TripAdvisor Widget */}
+            <div className="flex flex-col items-center md:items-start justify-center md:justify-start py-2 mt-4 scale-75 md:scale-80 origin-center md:origin-left opacity-90">
+              <div id="TA_rated269" className="TA_rated bg-transparent">
+                <ul id="PVGJzI0lMks" className="TA_links FsH9US">
+                  <li id="giONV8nT" className="xQIzNbCU4FcN">
+                    <a 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      href="https://www.tripadvisor.co/Attraction_Review-g4454152-d34281324-Reviews-Zen_Spa_Bienestar_Roldanillo-Roldanillo_Valle_del_Cauca_Department.html"
+                    >
+                      <img 
+                        src="https://www.tripadvisor.co/img/cdsi/img2/badges/ollie-11424-2.gif" 
+                        alt="TripAdvisor" 
+                      />
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+              <Script 
+                src="https://www.jscache.com/wejs?wtype=rated&amp;uniq=269&amp;locationId=34281324&amp;lang=es_CO&amp;display_version=2"
+                strategy="afterInteractive"
+                data-loadtrk
+                onLoad={() => {
+                  const elem = document.getElementById('TA_rated269');
+                  if (elem) {
+                    (elem as any).loadtrk = true;
+                  }
+                }}
+              />
             </div>
           </div>
 
