@@ -58,16 +58,21 @@ export function Navbar() {
         }`}
       >
         <div className="container mx-auto flex items-center justify-between px-6 md:px-12">
-          <div className="relative h-14 w-32 shrink-0 overflow-hidden sm:h-16 sm:w-40 md:h-18 md:w-48 lg:h-20 lg:w-56 xl:h-24 xl:w-72">
+          <Link href="/" className="flex items-center gap-3.5 focus:outline-none focus:ring-2 focus:ring-zen-wine rounded-sm shrink-0">
             <Image
-              src="/logo.png"
+              src="/images/spa-local/logo-pared.webp"
               alt="Zen Spa Logo"
-              fill
+              width={48}
+              height={48}
               priority
-              className="object-contain object-left"
-              sizes="(max-width: 640px) 128px, (max-width: 768px) 160px, (max-width: 1024px) 192px, (max-width: 1280px) 224px, 288px"
+              className="object-cover rounded-full ring-2 ring-zen-pink/35 shadow-md"
             />
-          </div>
+            <span className={`font-serif text-lg md:text-xl tracking-[0.1em] uppercase ${
+              isScrolled ? "text-zen-wine font-semibold" : "text-white"
+            }`}>
+              Zen Spa
+            </span>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-10 items-center">

@@ -70,8 +70,8 @@ export function FacialesIntroSection() {
             <p className="font-serif text-zen-wine text-lg italic mb-2">
               "La piel es el espejo del alma."
             </p>
-            <p className="font-sans text-xs tracking-widest text-zen-brown uppercase">
-              Zen Spa 360°
+            <p className="font-sans text-xs tracking-widest text-zen-brown uppercase font-semibold">
+              ZEN SPA BIENESTAR
             </p>
           </motion.div>
         </motion.div>
