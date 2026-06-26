@@ -86,7 +86,7 @@ export function Location() {
           >
             {/* Aesthetic Map Image */}
             <Image
-              src="/images/roldanillo-mapa-estetico.webp"
+              src="/images/zen-spa-entrada-foto.webp"
               alt="Ubicación geográfica de Zen Spa en Roldanillo"
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
