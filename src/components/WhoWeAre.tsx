@@ -57,18 +57,17 @@ export function WhoWeAre() {
             <div className="absolute inset-0 bg-zen-wine/10 mix-blend-multiply" />
           </div>
           
-          {/* Floating badge */}
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.5 }}
-            className="absolute -bottom-8 -left-8 md:-left-12 bg-white p-6 md:p-8 shadow-2xl max-w-[240px]"
+            className="absolute -bottom-8 -left-8 md:-left-12 bg-white p-6 md:p-8 shadow-2xl max-w-[280px]"
           >
-            <p className="font-serif text-zen-wine text-lg italic mb-2">
-              {"\u201C"}La calidez de un cuidador, la precisión de un sabio.{"\u201D"}
+            <p className="font-serif text-zen-wine text-base italic mb-2">
+              {"\u201C"}Un espacio sagrado para cultivar el equilibrio perfecto entre cuerpo, mente y espíritu.{"\u201D"}
             </p>
-            <p className="font-sans text-xs tracking-widest text-zen-brown uppercase">Diana & Valeria</p>
+            <p className="font-sans text-[10px] tracking-[0.2em] text-zen-brown uppercase font-semibold">ZEN SPA BIENESTAR</p>
           </motion.div>
         </motion.div>
 

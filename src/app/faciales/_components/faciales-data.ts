@@ -27,7 +27,7 @@ export const FACIAL_TREATMENTS: FacialTreatment[] = [
       "Extracción de comedones",
       "Nutrición celular",
     ],
-    image: `${IMG_BASE}/faciales_express.webp`,
+    image: `${IMG_BASE}/express.webp`,
     imageAlt: "Limpieza facial express en Roldanillo para higienización rápida y nutrición celular frente a la radiación del norte del Valle",
   },
   {
@@ -44,7 +44,7 @@ export const FACIAL_TREATMENTS: FacialTreatment[] = [
       "Porcelanización para textura suave",
       "Todo el protocolo de la Limpieza Express",
     ],
-    image: `${IMG_BASE}/faciales_profunda.webp`,
+    image: `${IMG_BASE}/profunda.webp`,
     imageAlt: "Tratamiento de limpieza facial profunda con punta de diamante en Roldanillo para remover la pavesa y el hollín de caña de azúcar",
     motionDelay: 0.1,
   },
@@ -54,7 +54,7 @@ export const FACIAL_TREATMENTS: FacialTreatment[] = [
     description:
       "Ideal para combatir la resequedad causada por el clima cálido. Devolvemos el agua y los nutrientes esenciales a tu piel para un efecto de \"cara lavada\" radiante y saludable.",
     price: "$50.000 COP",
-    image: `${IMG_BASE}/faciales_hidratacion.png`,
+    image: `${IMG_BASE}/hidratacion.webp`,
     imageAlt: "Hidratación facial molecular profunda en Zarzal para restaurar agua y lípidos protectores frente al clima cálido",
     motionDelay: 0.2,
   },
