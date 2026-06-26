@@ -4,6 +4,7 @@ import { WhoWeAre } from '@/components/WhoWeAre';
 import { ServicesGrid } from '@/components/ServicesGrid';
 import { Testimonials } from '@/components/Testimonials';
 import { Santuario } from '@/components/Santuario';
+import { BlogReadings } from '@/components/BlogReadings';
 import { Location } from '@/components/Location';
 
 export default function Home() {
@@ -15,7 +16,9 @@ export default function Home() {
       <ServicesGrid />
       <Testimonials />
       <Santuario />
+      <BlogReadings />
       <Location />
     </main>
   );
 }
+

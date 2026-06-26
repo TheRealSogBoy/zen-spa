@@ -87,6 +87,14 @@ export function Footer() {
                   Bienestar Corporativo B2B
                 </Link>
               </li>
+              <li>
+                <Link
+                  href="/blog"
+                  className="hover:text-zen-pink transition-colors duration-300"
+                >
+                  Blog de Bienestar
+                </Link>
+              </li>
             </ul>
           </div>
 

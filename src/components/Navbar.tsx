@@ -26,7 +26,9 @@ export function Navbar() {
     { name: "Experiencias", href: "/experiencias" },
     { name: "Mini Divas", href: "/minidivas" },
     { name: "Corporativo", href: "/corporativo" },
+    { name: "Blog", href: "/blog" },
   ];
+
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     setIsScrolled(latest > 50);
