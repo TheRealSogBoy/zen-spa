@@ -50,18 +50,28 @@ export function ExperienciasRitualCard({
         </div>
 
         {/* WhatsApp CTA Button */}
-        <a
-          href={`https://wa.me/573156881765?text=Hola%20Zen%20Spa!%20%F0%9F%8E%81%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20y%20adquirir%20el%20Bono%20de%20Regalo:%20%22${encodeURIComponent(title)}%22%20%E2%9C%A8`}
-          target="_blank"
-          rel="noopener noreferrer"
+        <button
+          onClick={() => {
+            if (typeof window !== "undefined") {
+              window.dispatchEvent(
+                new CustomEvent("open-booking-modal", {
+                  detail: {
+                    section: "experiencias",
+                    serviceName: title,
+                    price: price,
+                  },
+                })
+              );
+            }
+          }}
           className={
             isWine
-              ? "w-full inline-flex items-center justify-center bg-white text-zen-wine hover:bg-zen-pink hover:text-white transition-colors duration-300 px-4 py-2.5 text-[10px] tracking-widest uppercase font-bold rounded-sm shadow-sm"
-              : "w-full inline-flex items-center justify-center bg-zen-wine text-zen-beige hover:bg-zen-brown transition-colors duration-300 px-4 py-2.5 text-[10px] tracking-widest uppercase font-bold rounded-sm shadow-sm"
+              ? "w-full inline-flex items-center justify-center bg-white text-zen-wine hover:bg-zen-pink hover:text-white transition-colors duration-300 px-4 py-2.5 text-[10px] tracking-widest uppercase font-bold rounded-sm shadow-sm cursor-pointer"
+              : "w-full inline-flex items-center justify-center bg-zen-wine text-zen-beige hover:bg-zen-brown transition-colors duration-300 px-4 py-2.5 text-[10px] tracking-widest uppercase font-bold rounded-sm shadow-sm cursor-pointer"
           }
         >
           Adquirir Bono
-        </a>
+        </button>
       </div>
     </motion.div>
   );

@@ -111,14 +111,24 @@ export function FacialTreatmentCard({
 
         {/* WhatsApp Reserva CTA */}
         <div className="mt-8 pt-6 border-t border-zen-beige/60">
-          <a
-            href={`https://wa.me/573156881765?text=Hola%20Zen%20Spa!%20%F0%9F%8C%B8%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20y%20reservar%20el%20tratamiento%20facial%20${encodeURIComponent(treatment.title)}%20%E2%9C%A8`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center bg-zen-wine text-zen-beige hover:bg-zen-brown transition-colors duration-300 px-6 py-3.5 font-sans text-[11px] tracking-widest uppercase rounded-sm shadow-md"
+          <button
+            onClick={() => {
+              if (typeof window !== "undefined") {
+                window.dispatchEvent(
+                  new CustomEvent("open-booking-modal", {
+                    detail: {
+                      section: "faciales",
+                      serviceName: treatment.title,
+                      price: treatment.price,
+                    },
+                  })
+                );
+              }
+            }}
+            className="inline-flex items-center justify-center bg-zen-wine text-zen-beige hover:bg-zen-brown transition-colors duration-300 px-6 py-3.5 font-sans text-[11px] tracking-widest uppercase rounded-sm shadow-md cursor-pointer"
           >
-            Reservar por WhatsApp
-          </a>
+            Reservar Ahora
+          </button>
         </div>
       </div>
     </motion.div>

@@ -89,14 +89,24 @@ export function CorporativoSoluciones() {
                 </p>
 
                 <div className="pt-4">
-                  <a
-                    href={CORPORATE_WHATSAPP_HREF}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-zen-wine text-zen-beige hover:bg-zen-brown px-6 py-3 font-sans text-[11px] tracking-widest uppercase transition-colors duration-300 rounded-sm shadow-md"
+                  <button
+                    onClick={() => {
+                      if (typeof window !== "undefined") {
+                        window.dispatchEvent(
+                          new CustomEvent("open-booking-modal", {
+                            detail: {
+                              section: "corporativo",
+                              serviceName: sol.title,
+                              price: 0,
+                            },
+                          })
+                        );
+                      }
+                    }}
+                    className="inline-flex items-center justify-center bg-zen-wine text-zen-beige hover:bg-zen-brown px-6 py-3 font-sans text-[11px] tracking-widest uppercase transition-colors duration-300 rounded-sm shadow-md cursor-pointer"
                   >
                     Cotizar Solución Corporativa
-                  </a>
+                  </button>
                 </div>
               </div>
             </motion.div>

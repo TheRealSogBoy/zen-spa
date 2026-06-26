@@ -8,7 +8,7 @@ import { Clock, Check, CalendarDays, Sparkles } from "lucide-react";
 type MassageService = {
   title: string;
   description: string;
-  priceRegular: number;
+  priceRegular: number | string;
   pricePromo?: number;
   duration: string;
   image: string;
@@ -45,6 +45,36 @@ const MASSAGE_SERVICES: MassageService[] = [
       "Masaje con cañas de Bambú (Bambuterapia)",
       "Reflexología podal para alivio sistémico",
       "Copa de vino de cortesía",
+    ],
+  },
+  {
+    title: "Masaje Terapéutico",
+    description: "Diseñado específicamente para tratar y aliviar dolores musculares severos o contracturas profundas. Dependiendo de la cronicidad del dolor y la zona afectada, se le debe advertir al cliente que el tratamiento puede llegar a requerir una doble sesión.",
+    priceRegular: "Desde $130.000 COP",
+    duration: "60 min",
+    image: "/images/masajes/masaje-terapeutico.webp",
+    imageAlt: "Masaje terapéutico descontracturante y clínico para alivio de dolores musculares en Roldanillo",
+    includes: [
+      "Masaje clínico descontracturante localizado",
+      "Terapia de calor y compresas herbales calientes",
+      "Estiramientos asistidos terapéuticos",
+      "Advertencia de cronicidad (posible doble sesión)",
+      "Infusión herbal de cortesía al terminar",
+    ],
+  },
+  {
+    title: "Masaje Deportivo",
+    description: "Orientado a la descarga y optimización dermo-muscular del deportista, ideal para ciclistas de ruta y parapentistas de la región del norte del Valle.",
+    priceRegular: "Consultar portafolio",
+    duration: "60 min",
+    image: "/images/masajes/masaje-deportivo.webp",
+    imageAlt: "Masaje deportivo de descarga muscular para atletas, ciclistas de ruta y parapentistas en Roldanillo",
+    includes: [
+      "Descarga muscular profunda para alto rendimiento",
+      "Optimización dermo-muscular y remoción de lactato",
+      "Ideal para ciclistas de ruta y parapentistas",
+      "Estiramientos dinámicos asistidos",
+      "Bebida hidratante o infusión herbal de cortesía",
     ],
   },
 ];
@@ -156,10 +186,12 @@ export function MasajesCatalogSection() {
                       Inversión
                     </span>
                     <div className="flex items-baseline gap-2">
-                      <span className="font-serif text-3xl text-zen-wine font-medium">
-                        ${currentPrice?.toLocaleString()} COP
+                      <span className="font-serif text-2xl md:text-3xl text-zen-wine font-medium">
+                        {typeof currentPrice === 'number'
+                          ? `$${currentPrice.toLocaleString()} COP`
+                          : currentPrice}
                       </span>
-                      {hasPromo && isWeekend && (
+                      {hasPromo && isWeekend && typeof massage.priceRegular === 'number' && (
                         <span className="text-xs text-zen-wine/50 line-through tabular-nums">
                           ${massage.priceRegular.toLocaleString()} COP
                         </span>
@@ -172,14 +204,24 @@ export function MasajesCatalogSection() {
                     )}
                   </div>
 
-                  <a
-                    href={`https://wa.me/573156881765?text=Hola%20Zen%20Spa%2C%20quiero%20reservar%20el%20${encodeURIComponent(massage.title)}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="inline-flex items-center justify-center bg-zen-wine text-zen-beige hover:bg-zen-brown transition-colors duration-300 px-6 py-3 font-sans text-[11px] tracking-widest uppercase rounded-sm shadow-md"
+                  <button
+                    onClick={() => {
+                      if (typeof window !== 'undefined') {
+                        window.dispatchEvent(
+                          new CustomEvent('open-booking-modal', {
+                            detail: {
+                              section: 'masajes',
+                              serviceName: massage.title,
+                              price: currentPrice
+                            }
+                          })
+                        );
+                      }
+                    }}
+                    className="inline-flex items-center justify-center bg-zen-wine text-zen-beige hover:bg-zen-brown transition-colors duration-300 px-6 py-3 font-sans text-[11px] tracking-widest uppercase rounded-sm shadow-md cursor-pointer"
                   >
                     Reservar Ahora
-                  </a>
+                  </button>
                 </div>
               </motion.div>
             );

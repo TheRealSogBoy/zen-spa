@@ -52,14 +52,24 @@ export function CorporativoHero() {
             transition={{ duration: 1, delay: 0.4 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
-            <a
-              href={CORPORATE_WHATSAPP_HREF}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center bg-zen-pink hover:bg-white text-zen-wine hover:text-zen-wine px-8 py-4 font-sans text-xs tracking-[0.2em] uppercase transition-all duration-300 shadow-xl font-semibold rounded-sm"
+            <button
+              onClick={() => {
+                if (typeof window !== "undefined") {
+                  window.dispatchEvent(
+                    new CustomEvent("open-booking-modal", {
+                      detail: {
+                        section: "corporativo",
+                        serviceName: "Propuesta de Bienestar Corporativo B2B",
+                        price: 0,
+                      },
+                    })
+                  );
+                }
+              }}
+              className="inline-flex items-center justify-center bg-zen-pink hover:bg-white text-zen-wine hover:text-zen-wine px-8 py-4 font-sans text-xs tracking-[0.2em] uppercase transition-all duration-300 shadow-xl font-semibold rounded-sm cursor-pointer"
             >
               Cotizar Solución Corporativa
-            </a>
+            </button>
           </motion.div>
 
           <motion.div

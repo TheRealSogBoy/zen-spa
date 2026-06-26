@@ -79,14 +79,24 @@ export function PriceCard({
         </div>
 
         {/* WhatsApp Reservation Button */}
-        <a
-          href={`https://wa.me/573156881765?text=Hola%20Zen%20Spa!%20%E2%98%80%EF%B8%8F%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20y%20reservar%20el%20servicio%20de%20Bronceado:%20${encodeURIComponent(title)}%20%F0%9F%91%99%20%E2%9C%A8`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="w-full inline-flex items-center justify-center bg-zen-wine text-zen-beige hover:bg-zen-brown transition-colors duration-300 px-5 py-2.5 font-sans text-[11px] tracking-widest uppercase rounded-sm shadow-md"
+        <button
+          onClick={() => {
+            if (typeof window !== "undefined") {
+              window.dispatchEvent(
+                new CustomEvent("open-booking-modal", {
+                  detail: {
+                    section: "bronceado",
+                    serviceName: title,
+                    price: price,
+                  },
+                })
+              );
+            }
+          }}
+          className="w-full inline-flex items-center justify-center bg-zen-wine text-zen-beige hover:bg-zen-brown transition-colors duration-300 px-5 py-2.5 font-sans text-[11px] tracking-widest uppercase rounded-sm shadow-md cursor-pointer"
         >
-          Reservar por WhatsApp
-        </a>
+          Reservar Ahora
+        </button>
       </div>
     </motion.div>
   );

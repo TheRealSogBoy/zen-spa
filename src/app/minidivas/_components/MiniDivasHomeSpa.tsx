@@ -88,19 +88,25 @@ export function MiniDivasHomeSpa() {
                    <p className="text-[10px] uppercase tracking-widest text-zen-brown font-semibold mb-1">Cotización personalizada</p>
                    <p className="text-zen-wine font-serif italic">Hablemos y diseñemos juntas</p>
                 </div>
-                <a 
-                  href={
-                    pkg.id === "cumple-suenos"
-                      ? "https://wa.me/573156881765?text=Hola%20Zen%20Spa!%20%F0%9F%8E%89%20Me%20gustar%C3%ADa%20cotizar%20y%20conocer%20m%C3%A1s%20detalles%20para%20la%20fiesta%20%22%C2%A1El%20Cumple%20de%20sus%20Sue%C3%B1os!%22%20%E2%9C%A8"
-                      : "https://wa.me/573156881765?text=Hola%20Zen%20Spa!%20%F0%9F%8F%A1%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20y%20cotizar%20el%20servicio%20de%20%22%C2%A1Mini%20Divas%20en%20tu%20Casa!%22%20%F0%9F%92%85%E2%9C%A8"
-                  }
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="bg-zen-wine text-white px-8 py-3.5 rounded-full text-xs font-bold tracking-[0.2em] uppercase hover:bg-zen-pink transition-all duration-300 flex items-center gap-3 active:scale-95 shadow-lg shadow-zen-wine/20"
+                <button 
+                  onClick={() => {
+                    if (typeof window !== "undefined") {
+                      window.dispatchEvent(
+                        new CustomEvent("open-booking-modal", {
+                          detail: {
+                            section: "minidivas",
+                            serviceName: pkg.id === "cumple-suenos" ? "¡El Cumple de sus Sueños!" : "¡Mini Divas en tu Casa!",
+                            price: 0,
+                          },
+                        })
+                      );
+                    }
+                  }}
+                  className="bg-zen-wine text-white px-8 py-3.5 rounded-full text-xs font-bold tracking-[0.2em] uppercase hover:bg-zen-pink transition-all duration-300 flex items-center gap-3 active:scale-95 shadow-lg shadow-zen-wine/20 cursor-pointer"
                 >
                   <MessageCircle size={16} />
                   Cotizar ahora
-                </a>
+                </button>
               </div>
             </motion.div>
           ))}

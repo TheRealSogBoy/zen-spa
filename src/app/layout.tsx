@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
+import { BookingModal } from "@/components/BookingModal";
 import Script from 'next/script';
 import { GoogleAnalytics } from '@next/third-parties/google';
 
@@ -152,6 +153,7 @@ export default function RootLayout({
         <div className="relative z-0 flex min-h-0 flex-1 flex-col">{children}</div>
         <Footer />
         <WhatsAppButton />
+        <BookingModal />
 
         {/* Google Analytics 4 */}
         <GoogleAnalytics gaId="G-XZVNVZ1FLC" />

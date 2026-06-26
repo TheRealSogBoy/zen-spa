@@ -154,14 +154,24 @@ function PackageCard({
 
         {/* WhatsApp Reserva CTA */}
         <div className="mt-8 pt-6 border-t border-zen-pink/15">
-          <a
-            href={getWhatsAppLink(pkg.id, pkg.title)}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full sm:w-auto inline-flex items-center justify-center bg-zen-wine text-zen-beige hover:bg-zen-pink hover:text-white transition-colors duration-300 px-8 py-3.5 font-sans text-[11px] tracking-[0.2em] uppercase rounded-full shadow-md font-semibold active:scale-95 text-center"
+          <button
+            onClick={() => {
+              if (typeof window !== "undefined") {
+                window.dispatchEvent(
+                  new CustomEvent("open-booking-modal", {
+                    detail: {
+                      section: "minidivas",
+                      serviceName: pkg.title,
+                      price: pkg.priceTiers[0]?.price || 135000,
+                    },
+                  })
+                );
+              }
+            }}
+            className="w-full sm:w-auto inline-flex items-center justify-center bg-zen-wine text-zen-beige hover:bg-zen-pink hover:text-white transition-colors duration-300 px-8 py-3.5 font-sans text-[11px] tracking-[0.2em] uppercase rounded-full shadow-md font-semibold active:scale-95 text-center cursor-pointer"
           >
-            Reservar por WhatsApp
-          </a>
+            Reservar Ahora
+          </button>
         </div>
       </div>
     </motion.div>

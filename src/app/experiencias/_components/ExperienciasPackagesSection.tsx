@@ -102,14 +102,24 @@ export function ExperienciasPackagesSection() {
                     </div>
 
                     {/* WhatsApp CTA */}
-                    <a
-                      href={`https://wa.me/573156881765?text=Hola%20Zen%20Spa!%20%F0%9F%8D%B7%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20y%20reservar%20el%20paquete%20de%20experiencia%20%22${encodeURIComponent(pkg.title)}%22%20%E2%9C%A8`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center bg-zen-wine text-zen-beige hover:bg-zen-brown transition-colors duration-300 px-6 py-3.5 font-sans text-[11px] tracking-widest uppercase rounded-sm shadow-md text-center"
+                    <button
+                      onClick={() => {
+                        if (typeof window !== "undefined") {
+                          window.dispatchEvent(
+                            new CustomEvent("open-booking-modal", {
+                              detail: {
+                                section: "experiencias",
+                                serviceName: pkg.title,
+                                price: pkg.price,
+                              },
+                            })
+                          );
+                        }
+                      }}
+                      className="inline-flex items-center justify-center bg-zen-wine text-zen-beige hover:bg-zen-brown transition-colors duration-300 px-6 py-3.5 font-sans text-[11px] tracking-widest uppercase rounded-sm shadow-md text-center cursor-pointer"
                     >
-                      Reservar por WhatsApp
-                    </a>
+                      Reservar Ahora
+                    </button>
                   </div>
                 </div>
               </motion.div>
