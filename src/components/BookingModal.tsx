@@ -180,9 +180,9 @@ export function BookingModal() {
         "Masaje Relajante Normal": 100000,
         "Masaje Relajante Completo (Piedras Volcánicas + Bambú)": 120000,
         "Masaje Relajante Completo": 120000,
-        "Masaje Deportivo": 110000,
-        "Masaje Terapéutico (Dolores)": 130000,
-        "Masaje Terapéutico": 130000,
+        "Masaje Deportivo": 130000,
+        "Masaje Terapéutico (Dolores)": 140000,
+        "Masaje Terapéutico": 140000,
       };
       return mapping[selection] || 100000;
     }
