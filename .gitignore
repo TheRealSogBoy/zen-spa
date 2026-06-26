@@ -62,3 +62,9 @@ Desktop.ini
 *.pem
 *.p12
 *.key
+
+# Exclude package manager lockfiles in production directory
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
