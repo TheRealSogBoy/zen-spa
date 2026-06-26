@@ -5,17 +5,9 @@ import { CorporativoPropuesta } from "./_components/CorporativoPropuesta";
 import { CorporativoSoluciones } from "./_components/CorporativoSoluciones";
 import { CorporativoSocialProof } from "./_components/CorporativoSocialProof";
 
-export const metadata: Metadata = {
-  title: "Bienestar Corporativo y Planes de Salud B2B | Zen Spa Roldanillo",
-  description:
-    "Soluciones estratégicas de bienestar corporativo en el Valle del Cauca. Reduzca el ausentismo y aumente la productividad de su equipo con jornadas in-house, Zen Day exclusivo y gift cards personalizadas.",
-  openGraph: {
-    title: "Bienestar Corporativo y Planes de Salud B2B | Zen Spa Roldanillo",
-    description:
-      "Soluciones estratégicas de bienestar corporativo en el Valle del Cauca. Reduzca el ausentismo y aumente la productividad de su equipo con jornadas in-house, Zen Day exclusivo y gift cards personalizadas.",
-    locale: "es_CO",
-    type: "website",
-  },
+export const metadata = {
+  title: 'Bienestar Corporativo B2B | Salud Laboral',
+  description: 'Soluciones estratégicas de bienestar para empresas en el Valle del Cauca. Jornadas de masajes in-house, gift cards y alianzas gubernamentales.'
 };
 
 export default function CorporativoPage() {

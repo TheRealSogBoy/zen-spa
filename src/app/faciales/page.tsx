@@ -5,17 +5,9 @@ import { FACIALES_HERO_IMAGE_SRC } from "./_components/faciales-constants";
 import { FacialesIntroSection } from "./_components/FacialesIntroSection";
 import { FacialesTreatmentsSection } from "./_components/FacialesTreatmentsSection";
 
-export const metadata: Metadata = {
-  title: "Tratamientos Faciales y Limpieza Profunda en Roldanillo | Zen Spa Bienestar",
-  description:
-    "Limpieza facial profunda con punta de diamante, hidratación molecular y peeling químico para combatir manchas y acné por pavesa en cabinas de total privacidad en Roldanillo.",
-  openGraph: {
-    title: "Tratamientos Faciales y Limpieza Profunda en Roldanillo | Zen Spa Bienestar",
-    description:
-      "Limpieza facial profunda con punta de diamante, hidratación molecular y peeling químico para combatir manchas y acné por pavesa en cabinas de total privacidad en Roldanillo.",
-    locale: "es_CO",
-    type: "website",
-  },
+export const metadata = {
+  title: 'Limpieza Facial Profunda y Dermoestética',
+  description: 'Desintoxica tu piel del calor y la pavesa agrícola del Valle. Tratamientos faciales dermoestéticos con pala ultrasónica y microdermoabrasión en Roldanillo.'
 };
 
 export default function FacialesPage() {

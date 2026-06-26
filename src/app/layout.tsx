@@ -24,27 +24,29 @@ const playfair = Playfair_Display({
 
 export const metadata: Metadata = {
   title: {
-    default: "Zen Spa 360° - Donde el tiempo se detiene",
-    template: "%s | Zen Spa 360°",
+    default: 'Zen Spa Bienestar | Spa y Estética en Roldanillo',
+    template: '%s | Zen Spa Bienestar Roldanillo'
   },
-  description:
-    "Ciencia, técnica y calidez en el corazón de Roldanillo. Spa integral y bienestar 360°",
+  description: 'Santuario de desconexión y cuidado dermoestético avanzado en el norte del Valle del Cauca. Tratamientos faciales contra la pavesa, masajes relajantes de privacidad absoluta, bronceo brasilero y spa de niñas Mini Divas.',
+  keywords: ['spa roldanillo', 'masajes roldanillo', 'limpieza facial roldanillo', 'bronceo brasilero valle', 'spa de niñas', 'bienestar', 'estetica avanzada'],
+  authors: [{ name: 'Zen Spa Bienestar' }],
+  creator: 'Zen Spa Bienestar',
+  publisher: 'Zen Spa Bienestar',
+  robots: 'index, follow',
   icons: {
     icon: "/favicon-zen-spa.ico",
   },
+  alternates: {
+    canonical: 'https://zenspa.com.co',
+  },
   openGraph: {
-    title: "Zen Spa 360° - Donde el tiempo se detiene",
-    description:
-      "Ciencia, técnica y calidez en el corazón de Roldanillo. Spa integral y bienestar 360°",
-    locale: "es_CO",
-    type: "website",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Zen Spa 360° - Donde el tiempo se detiene",
-    description:
-      "Ciencia, técnica y calidez en el corazón de Roldanillo. Spa integral y bienestar 360°",
-  },
+    type: 'website',
+    locale: 'es_CO',
+    url: 'https://zenspa.com.co',
+    title: 'Zen Spa Bienestar | Spa y Estética en Roldanillo',
+    description: 'Santuario de desconexión y cuidado dermoestético avanzado en Roldanillo, Valle. Masajes relajantes, limpieza facial profunda, bronceo brasilero y spa infantil de niñas.',
+    siteName: 'Zen Spa Bienestar',
+  }
 };
 
 export default function RootLayout({

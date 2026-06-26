@@ -6,17 +6,9 @@ import { ExperienciasPackagesSection } from "./_components/ExperienciasPackagesS
 import { ExperienciasRitualsSection } from "./_components/ExperienciasRitualsSection";
 import { ExperienciasGallery } from "./_components/ExperienciasGallery";
 
-export const metadata: Metadata = {
-  title: "Rituales de Pareja y Conexión en Roldanillo | Zen Spa Bienestar",
-  description:
-    "Disfruta de una pausa consciente en pareja o con amigas en Roldanillo. Masajes relajantes de cuerpo completo, baño de vapor y copas de vino en total privacidad acústica.",
-  openGraph: {
-    title: "Rituales de Pareja y Conexión en Roldanillo | Zen Spa Bienestar",
-    description:
-      "Disfruta de una pausa consciente en pareja o con amigas en Roldanillo. Masajes relajantes de cuerpo completo, baño de vapor y copas de vino en total privacidad acústica.",
-    locale: "es_CO",
-    type: "website",
-  },
+export const metadata = {
+  title: 'Experiencias de Spa en Pareja y Amigas',
+  description: 'Disfruta de absoluta privacidad acústica y confort premium en nuestro santuario de Roldanillo. Rituales con baño de vapor, masajes y cenas románticas.'
 };
 
 export default function ExperienciasPage() {

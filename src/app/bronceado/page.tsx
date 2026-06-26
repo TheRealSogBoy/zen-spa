@@ -4,17 +4,9 @@ import { CustomCursor } from "@/components/CustomCursor";
 import { BronceoIntroSection } from "./_components/BronceoIntroSection";
 import { BronceoPricingSection } from "./_components/BronceoPricingSection";
 
-export const metadata: Metadata = {
-  title: "Bronceo Brasilero en Roldanillo | Zen Spa Bienestar",
-  description:
-    "Consigue tu marquinha soñada de forma segura en Roldanillo, Valle del Cauca. Agenda tu sesión antes de las 11:00 AM para una fijación perfecta de DHA de caña de azúcar.",
-  openGraph: {
-    title: "Bronceo Brasilero en Roldanillo | Zen Spa Bienestar",
-    description:
-      "Consigue tu marquinha soñada de forma segura en Roldanillo, Valle del Cauca. Agenda tu sesión antes de las 11:00 AM para una fijación perfecta de DHA.",
-    locale: "es_CO",
-    type: "website",
-  },
+export const metadata = {
+  title: 'Bronceo Brasilero con Sol',
+  description: 'Consigue tu marquinha perfecta de forma segura antes de las 11:00 AM con DHA orgánica de caña en nuestro solárium privado de Roldanillo.'
 };
 
 export default function BronceadoPage() {

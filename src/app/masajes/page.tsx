@@ -4,17 +4,9 @@ import { CustomCursor } from "@/components/CustomCursor";
 import { MasajesIntroSection } from "./_components/MasajesIntroSection";
 import { MasajesCatalogSection } from "./_components/MasajesCatalogSection";
 
-export const metadata: Metadata = {
-  title: "Masajes Relajantes en Roldanillo | Zen Spa Bienestar",
-  description:
-    "Disfruta de masajes relajantes individuales con piedras volcánicas, bambuterapia y reflexología podal en cabinas insonorizadas con total privacidad en Roldanillo.",
-  openGraph: {
-    title: "Masajes Relajantes en Roldanillo | Zen Spa Bienestar",
-    description:
-      "Disfruta de masajes relajantes individuales con piedras volcánicas, bambuterapia y reflexología podal en cabinas insonorizadas con total privacidad en Roldanillo.",
-    locale: "es_CO",
-    type: "website",
-  },
+export const metadata = {
+  title: 'Masajes Relajantes y Descontracturantes',
+  description: 'Terapia corporal profunda, reflexología podal y masajes de relajación con piedras volcánicas calientes y bambuterapia en Roldanillo.'
 };
 
 export default function MasajesPage() {

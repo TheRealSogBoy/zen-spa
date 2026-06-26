@@ -6,17 +6,9 @@ import { MiniDivasPackages } from "./_components/MiniDivasPackages";
 import { MiniDivasHomeSpa } from "./_components/MiniDivasHomeSpa";
 import { MiniDivasGallery } from "./_components/MiniDivasGallery";
 
-export const metadata: Metadata = {
-  title: "Mini Divas: Spa Infantil y Familiar en Roldanillo | Zen Spa Bienestar",
-  description:
-    "Descubre la magia del autocuidado lúdico para niñas en Roldanillo y el norte del Valle. Planes individuales, grupales de cumpleaños y servicio a domicilio de mimos.",
-  openGraph: {
-    title: "Mini Divas: Spa Infantil y Familiar en Roldanillo | Zen Spa Bienestar",
-    description:
-      "Descubre la magia del autocuidado lúdico para niñas en Roldanillo y el norte del Valle. Planes individuales, grupales de cumpleaños y servicio a domicilio de mimos.",
-    locale: "es_CO",
-    type: "website",
-  },
+export const metadata = {
+  title: 'Spa de Niñas Mini Divas | Fiestas Infantiles',
+  description: 'Iniciación lúdica al amor propio y celebraciones de cumpleaños de niñas en Roldanillo. Planes compartidos madre-hija libre de estrés logístico.'
 };
 
 export default function MiniDivasPage() {
