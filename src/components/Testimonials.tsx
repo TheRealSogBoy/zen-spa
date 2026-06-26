@@ -2,6 +2,7 @@
 
 import { motion } from "motion/react";
 import { Quote, Star } from "lucide-react";
+import Script from "next/script";
 
 const testimonials = [
   {
@@ -73,6 +74,38 @@ export function Testimonials() {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        {/* TripAdvisor Widget */}
+        <div className="flex flex-col items-center justify-center py-6 mt-16">
+          <div id="TA_rated269" className="TA_rated bg-white p-3 rounded-lg shadow-sm">
+            <ul id="PVGJzI0lMks" className="TA_links FsH9US">
+              <li id="giONV8nT" className="xQIzNbCU4FcN">
+                <a 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  href="https://www.tripadvisor.co/Attraction_Review-g4454152-d34281324-Reviews-Zen_Spa_Bienestar_Roldanillo-Roldanillo_Valle_del_Cauca_Department.html"
+                >
+                  <img 
+                    src="https://www.tripadvisor.co/img/cdsi/img2/badges/ollie-11424-2.gif" 
+                    alt="TripAdvisor" 
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <Script 
+            src="https://www.jscache.com/wejs?wtype=rated&amp;uniq=269&amp;locationId=34281324&amp;lang=es_CO&amp;display_version=2"
+            strategy="afterInteractive"
+            data-loadtrk
+            onLoad={() => {
+              const elem = document.getElementById('TA_rated269');
+              if (elem) {
+                (elem as any).loadtrk = true;
+              }
+            }}
+          />
         </div>
       </div>
     </section>
