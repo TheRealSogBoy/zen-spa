@@ -20,7 +20,7 @@ export const SPA_PACKAGES: PackageCardFields[] = [
       "Infusión de hierbas calmantes al finalizar para prolongar el estado de paz.",
       "Copa de vino.",
     ],
-    image: "/images/spa-local/camillas-pareja.webp",
+    image: "/images/experiencias/duo-bienestar-masaje-parejas-roldanillo.webp",
   },
   {
     title: "Ritual de Conexión para Dos",
@@ -35,7 +35,7 @@ export const SPA_PACKAGES: PackageCardFields[] = [
       "Copa de Vino o crema de Whisky.",
       "Snack.",
     ],
-    image: "/images/spa-local/zona-masajes.webp",
+    image: "/images/experiencias/ritual-conexion-pareja-zen-spa-roldanillo.webp",
   },
   {
     title: "Paquete Romántico Premium",
@@ -51,7 +51,7 @@ export const SPA_PACKAGES: PackageCardFields[] = [
       "Copa de vino o crema de whisky.",
       "Snack.",
     ],
-    image: "/images/experiencias/plan-romantico-premium.webp",
+    image: "/images/experiencias/plan-romantico-premium-parejas-roldanillo.webp",
   },
   {
     title: "Ritual Nocturno",

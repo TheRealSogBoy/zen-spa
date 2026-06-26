@@ -238,7 +238,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Cumpleaños sin estrés: el auge del spa infantil Mini Divas como alternativa a las piñatas en Roldanillo',
     excerpt: 'Para las madres modernas en Roldanillo, Zarzal o La Unión, la organización de una fiesta infantil convencional ya no se siente como una celebración, sino como una prueba de resistencia. Te presentamos la alternativa perfecta.',
     readTime: 5,
-    coverImage: '/images/minidivas/celebracion-diva-vip.webp',
+    coverImage: '/images/minidivas/cumpleanos-spa-ninas-mini-divas-roldanillo.webp',
     coverAlt: 'Spa infantil Mini Divas para niñas — celebración de cumpleaños en Roldanillo Valle del Cauca',
     category: 'Mini Divas',
     categorySlug: 'mini-divas',

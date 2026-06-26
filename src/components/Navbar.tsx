@@ -60,17 +60,17 @@ export function Navbar() {
         <div className="container mx-auto flex items-center justify-between px-6 md:px-12">
           <Link href="/" className="flex items-center gap-3.5 focus:outline-none focus:ring-2 focus:ring-zen-wine rounded-sm shrink-0">
             <Image
-              src="/images/spa-local/logo-pared.webp"
+              src={isScrolled ? "/images/logo/zen-spa-logo-cafe.svg" : "/images/logo/zen-spa-logo-blanco.svg"}
               alt="Zen Spa Logo"
               width={48}
               height={48}
               priority
-              className="object-cover rounded-full ring-2 ring-zen-pink/35 shadow-md"
+              className="object-cover transition-all duration-300"
             />
-            <span className={`font-serif text-lg md:text-xl tracking-[0.1em] uppercase ${
-              isScrolled ? "text-zen-wine font-semibold" : "text-white"
+            <span className={`font-serif text-lg md:text-xl tracking-[0.1em] uppercase transition-colors duration-300 ${
+              isScrolled ? "text-[#3f0c08] font-semibold" : "text-[#efdbd5]"
             }`}>
-              Zen Spa
+              ZEN SPA
             </span>
           </Link>
 

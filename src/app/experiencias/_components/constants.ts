@@ -1,4 +1,4 @@
-export const EXPERIENCIAS_HERO_IMAGE = "/images/experiencias/portada-experiencias-zen.webp";
+export const EXPERIENCIAS_HERO_IMAGE = "/images/experiencias/portada-spa-parejas-roldanillo-valle.webp";
 
 /** Background for the gift cards / rituals section */
 export const EXPERIENCIAS_RITUALS_BG_IMAGE =

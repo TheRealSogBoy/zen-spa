@@ -27,7 +27,7 @@ export const FACIAL_TREATMENTS: FacialTreatment[] = [
       "Extracción de comedones",
       "Nutrición celular",
     ],
-    image: `${IMG_BASE}/express.webp`,
+    image: `${IMG_BASE}/limpieza-facial-express-zen-spa-roldanillo.webp`,
     imageAlt: "Limpieza facial express en Roldanillo para higienización rápida y nutrición celular frente a la radiación del norte del Valle",
   },
   {
@@ -44,7 +44,7 @@ export const FACIAL_TREATMENTS: FacialTreatment[] = [
       "Porcelanización para textura suave",
       "Todo el protocolo de la Limpieza Express",
     ],
-    image: `${IMG_BASE}/profunda.webp`,
+    image: `${IMG_BASE}/limpieza-facial-profunda-zen-spa-roldanillo.webp`,
     imageAlt: "Tratamiento de limpieza facial profunda con punta de diamante en Roldanillo para remover la pavesa y el hollín de caña de azúcar",
     motionDelay: 0.1,
   },
@@ -54,7 +54,7 @@ export const FACIAL_TREATMENTS: FacialTreatment[] = [
     description:
       "Ideal para combatir la resequedad causada por el clima cálido. Devolvemos el agua y los nutrientes esenciales a tu piel para un efecto de \"cara lavada\" radiante y saludable.",
     price: "$50.000 COP",
-    image: `${IMG_BASE}/hidratacion.webp`,
+    image: `${IMG_BASE}/hidratacion-facial-dermoestetica-roldanillo.webp`,
     imageAlt: "Hidratación facial molecular profunda en Zarzal para restaurar agua y lípidos protectores frente al clima cálido",
     motionDelay: 0.2,
   },
@@ -65,7 +65,7 @@ export const FACIAL_TREATMENTS: FacialTreatment[] = [
       "Un protocolo enfocado en tratar hiperpigmentaciones solares u hormonales. Trabajamos para aclarar y unificar el tono de tu piel de manera segura y progresiva.",
     price: "Precio sujeto a valoración",
     priceNote: "Agendamos tu diagnóstico para personalizar el tratamiento",
-    image: `${IMG_BASE}/tratamiento-anti-manchas.webp`,
+    image: `${IMG_BASE}/tratamiento-despigmentante-manchas-roldanillo.webp`,
     imageAlt: "Dermodespigmentación facial y peeling químico en La Unión para atenuar manchas causadas por el sol extremo",
   },
   {
@@ -74,7 +74,7 @@ export const FACIAL_TREATMENTS: FacialTreatment[] = [
     description:
       "Nuestro tratamiento más avanzado para revertir los signos de la edad. Enfocado en la regeneración celular, mejora la elasticidad y suaviza líneas de expresión para una piel visiblemente más joven.",
     price: "$500.000 COP",
-    image: `${IMG_BASE}/rejuvenecimiento-facial.webp`,
+    image: `${IMG_BASE}/rejuvenecimiento-facial-avanzado-roldanillo.webp`,
     imageAlt: "Rejuvenecimiento facial con aparatología activa en Toro para regeneración celular profunda y firmeza dérmica",
     motionDelay: 0.1,
   },

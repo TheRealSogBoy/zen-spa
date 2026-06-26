@@ -66,7 +66,7 @@ export const DIVA_PACKAGES: MiniDivasPackage[] = [
       { label: "2 Niñas", price: "$290.000" },
       { label: "3 Niñas", price: "$380.000" },
     ],
-    image: "/images/minidivas/experiencia-diva-premium.webp",
+    image: "/images/minidivas/experiencia-spa-infantil-premium-roldanillo.webp",
   },
   {
     id: "diva-vip",
@@ -86,7 +86,7 @@ export const DIVA_PACKAGES: MiniDivasPackage[] = [
       { label: "2 Niñas", price: "$370.000" },
       { label: "3 Niñas", price: "$490.000" },
     ],
-    image: "/images/minidivas/celebracion-diva-vip.webp",
+    image: "/images/minidivas/cumpleanos-spa-ninas-mini-divas-roldanillo.webp",
   },
 ];
 

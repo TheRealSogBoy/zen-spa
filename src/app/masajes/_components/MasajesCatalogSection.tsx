@@ -52,7 +52,7 @@ const MASSAGE_SERVICES: MassageService[] = [
     description: "Diseñado específicamente para tratar y aliviar dolores musculares severos o contracturas profundas. Dependiendo de la cronicidad del dolor y la zona afectada, se le debe advertir al cliente que el tratamiento puede llegar a requerir una doble sesión.",
     priceRegular: "Desde $140.000 COP",
     duration: "60 min",
-    image: "/images/masajes/masaje-terapeutico.webp",
+    image: "/images/masajes/masaje-terapeutico-dolor-muscular-roldanillo.webp",
     imageAlt: "Masaje terapéutico descontracturante y clínico para alivio de dolores musculares en Roldanillo",
     includes: [
       "Masaje clínico descontracturante localizado",
@@ -67,7 +67,7 @@ const MASSAGE_SERVICES: MassageService[] = [
     description: "Orientado a la descarga y optimización dermo-muscular del deportista, ideal para ciclistas de ruta y parapentistas de la región del norte del Valle.",
     priceRegular: 130000,
     duration: "60 min",
-    image: "/images/masajes/masaje-deportivo.webp",
+    image: "/images/masajes/masaje-deportivo-recuperacion-atletas-roldanillo.webp",
     imageAlt: "Masaje deportivo de descarga muscular para atletas, ciclistas de ruta y parapentistas en Roldanillo",
     includes: [
       "Descarga muscular profunda para alto rendimiento",
